@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    grid-template-columns:auto auto auto;
+    grid-template-columns:50% auto auto;
 }
 .col{
     padding:.4em 1.3em;
@@ -15,7 +15,12 @@ input.txt{
 input.btn{
     border: 0;
     padding:1em;
+<<<<<<< HEAD
     background: blue;
     margin-bottom: 2em;
 }
 
+=======
+    margin-bottom: 2em;
+}
+>>>>>>> 010bd2887ebeeed3431e450484fbe1661e504fd3

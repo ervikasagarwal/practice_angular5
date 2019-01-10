@@ -1,10 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
+ // import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { FormsModule } from '@angular/forms';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'about', component: AboutComponent },
+  { path: 'home', component: HomeComponent },
+];
 
 import { WjGridModule } from 'wijmo/wijmo.angular2.grid';
 import { WjChartModule } from 'wijmo/wijmo.angular2.chart';
@@ -19,12 +27,18 @@ setLicenseKey('AA4BDgIOB3ZiAG8AbQAeKN7cULYbdR6MBtN8XUag1FSxUzISgXSMfmgdIrAu2FV/p
     AboutComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
+<<<<<<< HEAD
     AppRoutingModule,
     WjChartModule,
     WjGridModule
     
     
+=======
+    // AppRoutingModule,
+    FormsModule
+>>>>>>> 010bd2887ebeeed3431e450484fbe1661e504fd3
   ],
   providers: [],
   bootstrap: [AppComponent]
