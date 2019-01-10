@@ -3,19 +3,19 @@
     <p>Add reminder</p>
   </div>
   <div class="col">
-    <p>Your list</p>
+    <p>Your list({{ itemCount }})</p>
   </div>
 </div>
 
 <div class="container color-light">
   <div class="col">
     <form>
-      <input type="text" class="txt" name="item" placeholder="Add reminder here" />
-      <input type="submit" class="btm" value="Add Reminder" />
+      <input type="text" class="txt" name="item" placeholder="type a new reminder title" [(ngModel)] = "reminderText" />
+      <input type="submit" class="btn" [value]="btnText"  (click)="addItem()"/> <!--value="{{ btnText }}" -->
     </form>
+    <p>{{ reminderText }}</p>
   </div>
   <div class="col">
-     <P class="list-item">Reminder List</P>
-          
+     <p class="list-item"  *ngFor="let reminder of reminders; let i= index"> {{ reminder }} <a (click)="removeItem(i)"> x</a></p>
   </div>
 </div>

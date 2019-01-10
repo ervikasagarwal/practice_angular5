@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    grid-template-columns:auto auto auto;
+    grid-template-columns:50% auto auto;
 }
 .col{
     padding:.4em 1.3em;
@@ -10,5 +10,10 @@ input.txt{
     border: 0;
     padding:1em;
     width:80%;
+    margin-bottom: 2em;
+}
+input.btn{
+    border: 0;
+    padding:1em;
     margin-bottom: 2em;
 }
