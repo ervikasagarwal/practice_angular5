@@ -3,4 +3,19 @@
   <li><a routerLink="about">About</a></li>
 </ul>
 <app-home></app-home>
+<!-- The content below is only a placeholder and can be replaced. -->
+
+<h2>Here are some Wijmo controls to help you start:</h2>
+<div class="App-panel">
+  <wj-flex-grid [itemsSource]="data">
+  </wj-flex-grid>
+  <wj-flex-chart [itemsSource]="data" [bindingX]="'country'">
+    <wj-flex-chart-series [binding]="'sales'" [name]="'Sales'">
+    </wj-flex-chart-series>
+    <wj-flex-chart-series [binding]="'expenses'" [name]="'Expenses'">
+    </wj-flex-chart-series>
+    <wj-flex-chart-series [binding]="'downloads'" [name]="'Downloads'">
+    </wj-flex-chart-series>
+  </wj-flex-chart>
+</div>
 <router-outlet></router-outlet>

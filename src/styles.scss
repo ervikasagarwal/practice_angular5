@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 
 body{
-    background: lightblue;
+    background:#13baca;
     padding:3em;
     font-family: 'Raleway','Arial';
     color:#fff;
@@ -23,3 +23,19 @@ a{
     color: #fff;
     text-decoration: none;
 }
+/* 
+  You can add global styles to this file,
+  and also import other style files
+*/
+@import "wijmo/styles/wijmo.scss";
+
+.App-panel {
+    margin: 0 48pt;
+    text-align: center;
+  }
+    .App-panel .wj-control {
+      display: inline-block;
+      width: 400px;
+      height: 300px;
+      vertical-align: top;
+    }
